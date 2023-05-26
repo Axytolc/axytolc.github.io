@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="styles.css?vary=aab07690" media="screen">
+    <title>bedwear</title>
+    <meta name="description" content="Bedwear comparison" />
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>bedwear</h1>
+        <h4>Bedwear comparison</h4>
+        <noscript>This page requires JavaScript to work. Don't worry, it's all local to the current page, and open source on GitHub.</noscript>
+        <hr>
+        <div id="top_nav_bar">
+            <div class="accordion navigation_accordion" id="navigation_accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="navigation_accordion_heading">
+                        <button class="accordion-button" type="button" id="toggle_nav_button" data-bs-toggle="collapse" data-bs-target="#navigation_accordion_collapse" aria-expanded="true" aria-controls="navigation_accordion_collapse">Navigation</button>
+                    </h2>
+                    <div id="navigation_accordion_collapse" class="accordion-collapse collapse show" aria-labelledby="navigation_accordion_heading" data-bs-parent="navigation_accordion">
+                        <div class="accordion-body">
+                            <div>
+                                <div class="accordion advanced_settings_section" id="settings_accordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="setting_accordion_heading">
+                                            <button class="accordion-button collapsed" id="toggle_adv_button" type="button" data-bs-toggle="collapse" data-bs-target="#settings_accordion_collapse" aria-expanded="false" aria-controls="settings_accordion_collapse">Advanced Settings</button>
+                                        </h2>
+                                        <div id="settings_accordion_collapse" class="accordion-collapse collapse" aria-labelledby="setting_accordion_heading" data-bs-parent="#settings_accordion">
+                                            <div class="accordion-body">
+                                                
+<h4>model</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_model"><label class="form-check-label" for="range_tablist_model" id="label_range_tablist_model">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__1" checked="true" onchange="javascript:toggleShowVal('model', '1')"> <label class="form-check-label" for="showval_model__1" title="Uncheck this to hide 'artiusv15_v1.safetensors [f949a62901]' from the page.">artiusv15_v1.safetensors [f949a62901]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__2" checked="true" onchange="javascript:toggleShowVal('model', '2')"> <label class="form-check-label" for="showval_model__2" title="Uncheck this to hide 'chilloutmix_NiPrunedFp32Fix.safetensors [fc2511737a]' from the page.">chilloutmix_NiPrunedFp32Fix.safetensors [fc2511737a]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__3" checked="true" onchange="javascript:toggleShowVal('model', '3')"> <label class="form-check-label" for="showval_model__3" title="Uncheck this to hide 'meinaalter_v2.safetensors [1faafdd131]' from the page.">meinaalter_v2.safetensors [1faafdd131]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__4" checked="true" onchange="javascript:toggleShowVal('model', '4')"> <label class="form-check-label" for="showval_model__4" title="Uncheck this to hide 'neverendingDreamNED_bakedVae.safetensors [64b14b6ca5]' from the page.">neverendingDreamNED_bakedVae.safetensors [64b14b6ca5]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__5" checked="true" onchange="javascript:toggleShowVal('model', '5')"> <label class="form-check-label" for="showval_model__5" title="Uncheck this to hide 'perfectWorld_v3Baked.safetensors [0f49d1caa2]' from the page.">perfectWorld_v3Baked.safetensors [0f49d1caa2]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__6" checked="true" onchange="javascript:toggleShowVal('model', '6')"> <label class="form-check-label" for="showval_model__6" title="Uncheck this to hide 'sxzLuma_098VAE.safetensors [4e318bf56d]' from the page.">sxzLuma_098VAE.safetensors [4e318bf56d]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__7" checked="true" onchange="javascript:toggleShowVal('model', '7')"> <label class="form-check-label" for="showval_model__7" title="Uncheck this to hide 'V08_V08a.safetensors [e1cabe6028]' from the page.">V08_V08a.safetensors [e1cabe6028]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__8" checked="true" onchange="javascript:toggleShowVal('model', '8')"> <label class="form-check-label" for="showval_model__8" title="Uncheck this to hide 'cardosAnimated_v25.safetensors [cee11bcb07]' from the page.">cardosAnimated_v25.safetensors [cee11bcb07]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__9" checked="true" onchange="javascript:toggleShowVal('model', '9')"> <label class="form-check-label" for="showval_model__9" title="Uncheck this to hide 'animatrix_v20.safetensors [5f6f1556d1]' from the page.">animatrix_v20.safetensors [5f6f1556d1]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__10" checked="true" onchange="javascript:toggleShowVal('model', '10')"> <label class="form-check-label" for="showval_model__10" title="Uncheck this to hide 'dreamshaper_6BakedVae.safetensors [b76cc78ad9]' from the page.">dreamshaper_6BakedVae.safetensors [b76cc78ad9]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__11" checked="true" onchange="javascript:toggleShowVal('model', '11')"> <label class="form-check-label" for="showval_model__11" title="Uncheck this to hide 'lyriel_v16.safetensors [ec6f68ea63]' from the page.">lyriel_v16.safetensors [ec6f68ea63]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__12" checked="true" onchange="javascript:toggleShowVal('model', '12')"> <label class="form-check-label" for="showval_model__12" title="Uncheck this to hide 'meinaunreal_v3.safetensors [d1c96253ed]' from the page.">meinaunreal_v3.safetensors [d1c96253ed]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__13" checked="true" onchange="javascript:toggleShowVal('model', '13')"> <label class="form-check-label" for="showval_model__13" title="Uncheck this to hide 'perfectWorld_v4Baked.safetensors [24a393500f]' from the page.">perfectWorld_v4Baked.safetensors [24a393500f]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__14" checked="true" onchange="javascript:toggleShowVal('model', '14')"> <label class="form-check-label" for="showval_model__14" title="Uncheck this to hide 'revsoap28D_v11.safetensors [18543976aa]' from the page.">revsoap28D_v11.safetensors [18543976aa]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__15" checked="true" onchange="javascript:toggleShowVal('model', '15')"> <label class="form-check-label" for="showval_model__15" title="Uncheck this to hide 'colorful_v30.safetensors [1a36578807]' from the page.">colorful_v30.safetensors [1a36578807]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__16" checked="true" onchange="javascript:toggleShowVal('model', '16')"> <label class="form-check-label" for="showval_model__16" title="Uncheck this to hide 'perfectdeliberate_v30.safetensors [1d47bbd6cc]' from the page.">perfectdeliberate_v30.safetensors [1d47bbd6cc]</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_model__17" checked="true" onchange="javascript:toggleShowVal('model', '17')"> <label class="form-check-label" for="showval_model__17" title="Uncheck this to hide 'revAnimated_v122.safetensors [f8bb2922e1]' from the page.">revAnimated_v122.safetensors [f8bb2922e1]</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('model')">Toggle All</button>
+<h4>Prompt</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_prompt"><label class="form-check-label" for="range_tablist_prompt" id="label_range_tablist_prompt">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_prompt__generic_pos" checked="true" onchange="javascript:toggleShowVal('prompt', 'generic_pos')"> <label class="form-check-label" for="showval_prompt__generic_pos" title="Uncheck this to hide 'Generic Positive Prompt' from the page.">Generic Positive Prompt</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_prompt__specified_pos" checked="true" onchange="javascript:toggleShowVal('prompt', 'specified_pos')"> <label class="form-check-label" for="showval_prompt__specified_pos" title="Uncheck this to hide 'Specified Positive Prompt' from the page.">Specified Positive Prompt</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('prompt')">Toggle All</button>
+<h4>Negative Prompt</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_negative_prompt"><label class="form-check-label" for="range_tablist_negative_prompt" id="label_range_tablist_negative_prompt">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_negative_prompt__generic_neg" checked="true" onchange="javascript:toggleShowVal('negative_prompt', 'generic_neg')"> <label class="form-check-label" for="showval_negative_prompt__generic_neg" title="Uncheck this to hide 'Generic Negative Prompt' from the page.">Generic Negative Prompt</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_negative_prompt__specified_neg" checked="true" onchange="javascript:toggleShowVal('negative_prompt', 'specified_neg')"> <label class="form-check-label" for="showval_negative_prompt__specified_neg" title="Uncheck this to hide 'Specified Negative Prompt' from the page.">Specified Negative Prompt</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('negative_prompt')">Toggle All</button>
+<h4>HighRes Upscaler</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_highres_upscaler"><label class="form-check-label" for="range_tablist_highres_upscaler" id="label_range_tablist_highres_upscaler">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__animesharp_4x" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'animesharp_4x')"> <label class="form-check-label" for="showval_highres_upscaler__animesharp_4x" title="Uncheck this to hide 'AnimeSharp 4x' from the page.">AnimeSharp 4x</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__dped" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'dped')"> <label class="form-check-label" for="showval_highres_upscaler__dped" title="Uncheck this to hide 'DPED' from the page.">DPED</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__ldsr" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'ldsr')"> <label class="form-check-label" for="showval_highres_upscaler__ldsr" title="Uncheck this to hide 'LDSR' from the page.">LDSR</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__lollypop" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'lollypop')"> <label class="form-check-label" for="showval_highres_upscaler__lollypop" title="Uncheck this to hide 'lollypop' from the page.">lollypop</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__r_esrgan_4x_" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'r_esrgan_4x_')"> <label class="form-check-label" for="showval_highres_upscaler__r_esrgan_4x_" title="Uncheck this to hide 'R-ESRGAN 4x+' from the page.">R-ESRGAN 4x+</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__r_esrgan_4x__anime6b" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'r_esrgan_4x__anime6b')"> <label class="form-check-label" for="showval_highres_upscaler__r_esrgan_4x__anime6b" title="Uncheck this to hide 'R-ESRGAN 4x+ Anime6B' from the page.">R-ESRGAN 4x+ Anime6B</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__remacri_4x" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'remacri_4x')"> <label class="form-check-label" for="showval_highres_upscaler__remacri_4x" title="Uncheck this to hide 'Remacri 4x' from the page.">Remacri 4x</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__remacri_4x_extrasmoother" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'remacri_4x_extrasmoother')"> <label class="form-check-label" for="showval_highres_upscaler__remacri_4x_extrasmoother" title="Uncheck this to hide 'Remacri 4x ExtraSmoother' from the page.">Remacri 4x ExtraSmoother</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__latent" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'latent')"> <label class="form-check-label" for="showval_highres_upscaler__latent" title="Uncheck this to hide 'Latent' from the page.">Latent</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_highres_upscaler__latent__bicubic_antialiased_" checked="true" onchange="javascript:toggleShowVal('highres_upscaler', 'latent__bicubic_antialiased_')"> <label class="form-check-label" for="showval_highres_upscaler__latent__bicubic_antialiased_" title="Uncheck this to hide 'Latent (bicubic antialiased)' from the page.">Latent (bicubic antialiased)</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('highres_upscaler')">Toggle All</button>
+<h4>Sampler</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_sampler"><label class="form-check-label" for="range_tablist_sampler" id="label_range_tablist_sampler">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_sampler__euler_a" checked="true" onchange="javascript:toggleShowVal('sampler', 'euler_a')"> <label class="form-check-label" for="showval_sampler__euler_a" title="Uncheck this to hide 'Euler a' from the page.">Euler a</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_sampler__dpm___2s_a_karras" checked="true" onchange="javascript:toggleShowVal('sampler', 'dpm___2s_a_karras')"> <label class="form-check-label" for="showval_sampler__dpm___2s_a_karras" title="Uncheck this to hide 'DPM++ 2S a Karras' from the page.">DPM++ 2S a Karras</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_sampler__dpm___2m_karras" checked="true" onchange="javascript:toggleShowVal('sampler', 'dpm___2m_karras')"> <label class="form-check-label" for="showval_sampler__dpm___2m_karras" title="Uncheck this to hide 'DPM++ 2M Karras' from the page.">DPM++ 2M Karras</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_sampler__dpm___sde_karras" checked="true" onchange="javascript:toggleShowVal('sampler', 'dpm___sde_karras')"> <label class="form-check-label" for="showval_sampler__dpm___sde_karras" title="Uncheck this to hide 'DPM++ SDE Karras' from the page.">DPM++ SDE Karras</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('sampler')">Toggle All</button>
+<h4>CFG Scale</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_cfg_scale"><label class="form-check-label" for="range_tablist_cfg_scale" id="label_range_tablist_cfg_scale">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_cfg_scale__3" checked="true" onchange="javascript:toggleShowVal('cfg_scale', '3')"> <label class="form-check-label" for="showval_cfg_scale__3" title="Uncheck this to hide '3' from the page.">3</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_cfg_scale__5" checked="true" onchange="javascript:toggleShowVal('cfg_scale', '5')"> <label class="form-check-label" for="showval_cfg_scale__5" title="Uncheck this to hide '5' from the page.">5</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_cfg_scale__7" checked="true" onchange="javascript:toggleShowVal('cfg_scale', '7')"> <label class="form-check-label" for="showval_cfg_scale__7" title="Uncheck this to hide '7' from the page.">7</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_cfg_scale__8" checked="true" onchange="javascript:toggleShowVal('cfg_scale', '8')"> <label class="form-check-label" for="showval_cfg_scale__8" title="Uncheck this to hide '8' from the page.">8</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_cfg_scale__9" checked="true" onchange="javascript:toggleShowVal('cfg_scale', '9')"> <label class="form-check-label" for="showval_cfg_scale__9" title="Uncheck this to hide '9' from the page.">9</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_cfg_scale__11" checked="true" onchange="javascript:toggleShowVal('cfg_scale', '11')"> <label class="form-check-label" for="showval_cfg_scale__11" title="Uncheck this to hide '11' from the page.">11</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('cfg_scale')">Toggle All</button>
+<h4>Denoising Hi Res fix strength</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_denoising"><label class="form-check-label" for="range_tablist_denoising" id="label_range_tablist_denoising">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_denoising__0_4" checked="true" onchange="javascript:toggleShowVal('denoising', '0_4')"> <label class="form-check-label" for="showval_denoising__0_4" title="Uncheck this to hide '0.4' from the page.">0.4</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_denoising__0_6" checked="true" onchange="javascript:toggleShowVal('denoising', '0_6')"> <label class="form-check-label" for="showval_denoising__0_6" title="Uncheck this to hide '0.6' from the page.">0.6</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_denoising__0_8" checked="true" onchange="javascript:toggleShowVal('denoising', '0_8')"> <label class="form-check-label" for="showval_denoising__0_8" title="Uncheck this to hide '0.8' from the page.">0.8</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('denoising')">Toggle All</button>
+<h4>Steps</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_steps"><label class="form-check-label" for="range_tablist_steps" id="label_range_tablist_steps">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_steps__20" checked="true" onchange="javascript:toggleShowVal('steps', '20')"> <label class="form-check-label" for="showval_steps__20" title="Uncheck this to hide '20' from the page.">20</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_steps__25" checked="true" onchange="javascript:toggleShowVal('steps', '25')"> <label class="form-check-label" for="showval_steps__25" title="Uncheck this to hide '25' from the page.">25</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_steps__30" checked="true" onchange="javascript:toggleShowVal('steps', '30')"> <label class="form-check-label" for="showval_steps__30" title="Uncheck this to hide '30' from the page.">30</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_steps__40" checked="true" onchange="javascript:toggleShowVal('steps', '40')"> <label class="form-check-label" for="showval_steps__40" title="Uncheck this to hide '40' from the page.">40</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_steps__50" checked="true" onchange="javascript:toggleShowVal('steps', '50')"> <label class="form-check-label" for="showval_steps__50" title="Uncheck this to hide '50' from the page.">50</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('steps')">Toggle All</button>
+<h4>clipskip</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_clipskip"><label class="form-check-label" for="range_tablist_clipskip" id="label_range_tablist_clipskip">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_clipskip__1" checked="true" onchange="javascript:toggleShowVal('clipskip', '1')"> <label class="form-check-label" for="showval_clipskip__1" title="Uncheck this to hide '1' from the page.">1</label>&nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_clipskip__2" checked="true" onchange="javascript:toggleShowVal('clipskip', '2')"> <label class="form-check-label" for="showval_clipskip__2" title="Uncheck this to hide '2' from the page.">2</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('clipskip')">Toggle All</button>
+<h4>427490730</h4><div class="timer_box">Auto cycle every <input style="width:30em;" autocomplete="off" type="range" min="0" max="360" value="0" class="form-range timer_range" id="range_tablist_seed"><label class="form-check-label" for="range_tablist_seed" id="label_range_tablist_seed">0 seconds</label></div>
+Show value: &nbsp;<input class="form-check-input" type="checkbox" autocomplete="off" id="showval_seed__427490730" checked="true" onchange="javascript:toggleShowVal('seed', '427490730')"> <label class="form-check-label" for="showval_seed__427490730" title="Uncheck this to hide '427490730' from the page.">427490730</label>&nbsp;&nbsp;<button class="submit" onclick="javascript:toggleShowAllAxis('seed')">Toggle All</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div style="margin: auto; width: fit-content;"><table class="sel_table">
+<tr class="primary">
+<td>
+<h4>model</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_model">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_model__1" id="clicktab_model__1" aria-selected="true" role="tab" title="artiusv15_v1.safetensors [f949a62901]: ">artiusv15_v1.safetensors [f949a62901]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__2" id="clicktab_model__2" aria-selected="false" role="tab" title="chilloutmix_NiPrunedFp32Fix.safetensors [fc2511737a]: ">chilloutmix_NiPrunedFp32Fix.safetensors [fc2511737a]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__3" id="clicktab_model__3" aria-selected="false" role="tab" title="meinaalter_v2.safetensors [1faafdd131]: ">meinaalter_v2.safetensors [1faafdd131]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__4" id="clicktab_model__4" aria-selected="false" role="tab" title="neverendingDreamNED_bakedVae.safetensors [64b14b6ca5]: ">neverendingDreamNED_bakedVae.safetensors [64b14b6ca5]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__5" id="clicktab_model__5" aria-selected="false" role="tab" title="perfectWorld_v3Baked.safetensors [0f49d1caa2]: ">perfectWorld_v3Baked.safetensors [0f49d1caa2]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__6" id="clicktab_model__6" aria-selected="false" role="tab" title="sxzLuma_098VAE.safetensors [4e318bf56d]: ">sxzLuma_098VAE.safetensors [4e318bf56d]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__7" id="clicktab_model__7" aria-selected="false" role="tab" title="V08_V08a.safetensors [e1cabe6028]: ">V08_V08a.safetensors [e1cabe6028]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__8" id="clicktab_model__8" aria-selected="false" role="tab" title="cardosAnimated_v25.safetensors [cee11bcb07]: ">cardosAnimated_v25.safetensors [cee11bcb07]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__9" id="clicktab_model__9" aria-selected="false" role="tab" title="animatrix_v20.safetensors [5f6f1556d1]: ">animatrix_v20.safetensors [5f6f1556d1]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__10" id="clicktab_model__10" aria-selected="false" role="tab" title="dreamshaper_6BakedVae.safetensors [b76cc78ad9]: ">dreamshaper_6BakedVae.safetensors [b76cc78ad9]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__11" id="clicktab_model__11" aria-selected="false" role="tab" title="lyriel_v16.safetensors [ec6f68ea63]: ">lyriel_v16.safetensors [ec6f68ea63]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__12" id="clicktab_model__12" aria-selected="false" role="tab" title="meinaunreal_v3.safetensors [d1c96253ed]: ">meinaunreal_v3.safetensors [d1c96253ed]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__13" id="clicktab_model__13" aria-selected="false" role="tab" title="perfectWorld_v4Baked.safetensors [24a393500f]: ">perfectWorld_v4Baked.safetensors [24a393500f]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__14" id="clicktab_model__14" aria-selected="false" role="tab" title="revsoap28D_v11.safetensors [18543976aa]: ">revsoap28D_v11.safetensors [18543976aa]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__15" id="clicktab_model__15" aria-selected="false" role="tab" title="colorful_v30.safetensors [1a36578807]: ">colorful_v30.safetensors [1a36578807]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__16" id="clicktab_model__16" aria-selected="false" role="tab" title="perfectdeliberate_v30.safetensors [1d47bbd6cc]: ">perfectdeliberate_v30.safetensors [1d47bbd6cc]</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_model__17" id="clicktab_model__17" aria-selected="false" role="tab" title="revAnimated_v122.safetensors [f8bb2922e1]: ">revAnimated_v122.safetensors [f8bb2922e1]</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show emptytab" id="tab_model__1" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__2" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__3" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__4" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__5" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__6" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__7" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__8" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__9" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__10" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__11" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__12" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__13" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__14" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__15" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__16" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_model__17" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="secondary">
+<td>
+<h4>Prompt</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_prompt">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_prompt__generic_pos" id="clicktab_prompt__generic_pos" aria-selected="true" role="tab" title="Generic Positive Prompt: ((masterpiece)), (best quality), 8k, ultra-detailed, woman, bedroom, bed hair, messy hair, waking up, pajamas, picture-perfect face,">Generic Positive Prompt</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_prompt__specified_pos" id="clicktab_prompt__specified_pos" aria-selected="false" role="tab" title="Specified Positive Prompt: attractive fit young [(Kate Beckinsale:0.6):(elsa \(frozen\)):0.5], skimpy pajamas, falling off one shoulder, bare shoulder, midriff, panty pull, seductive smile, full body, partially undressed, bedroom, on bed, firm large breasts">Specified Positive Prompt</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show" id="tab_prompt__generic_pos" role="tabpanel"><div class="tabval_subdiv">((masterpiece)), (best quality), 8k, ultra-detailed, woman, bedroom, bed hair, messy hair, waking up, pajamas, picture-perfect face,</div></div>
+<div class="tab-pane" id="tab_prompt__specified_pos" role="tabpanel"><div class="tabval_subdiv">attractive fit young [(Kate Beckinsale:0.6):(elsa \(frozen\)):0.5], skimpy pajamas, falling off one shoulder, bare shoulder, midriff, panty pull, seductive smile, full body, partially undressed, bedroom, on bed, firm large breasts</div></div>
+</div></td></tr>
+<tr class="primary">
+<td>
+<h4>Negative Prompt</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_negative_prompt">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_negative_prompt__generic_neg" id="clicktab_negative_prompt__generic_neg" aria-selected="true" role="tab" title="Generic Negative Prompt: (worst quality,low quality:1.4), (loli,child,infant,baby:1.3), (chinese style,chinese face,chinese girl,thai style,thai girl,thai face),">Generic Negative Prompt</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_negative_prompt__specified_neg" id="clicktab_negative_prompt__specified_neg" aria-selected="false" role="tab" title="Specified Negative Prompt: Asian-Less-Neg, negative_hand-neg, FastNegativeEmbedding, (worst quality:2), (low quality:2), ng_deepnegative_v1_75t">Specified Negative Prompt</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show" id="tab_negative_prompt__generic_neg" role="tabpanel"><div class="tabval_subdiv">(worst quality,low quality:1.4), (loli,child,infant,baby:1.3), (chinese style,chinese face,chinese girl,thai style,thai girl,thai face),</div></div>
+<div class="tab-pane" id="tab_negative_prompt__specified_neg" role="tabpanel"><div class="tabval_subdiv">Asian-Less-Neg, negative_hand-neg, FastNegativeEmbedding, (worst quality:2), (low quality:2), ng_deepnegative_v1_75t</div></div>
+</div></td></tr>
+<tr class="secondary">
+<td>
+<h4>HighRes Upscaler</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_highres_upscaler">
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__animesharp_4x" id="clicktab_highres_upscaler__animesharp_4x" aria-selected="false" role="tab" title="AnimeSharp 4x: ">AnimeSharp 4x</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__dped" id="clicktab_highres_upscaler__dped" aria-selected="false" role="tab" title="DPED: ">DPED</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__ldsr" id="clicktab_highres_upscaler__ldsr" aria-selected="false" role="tab" title="LDSR: ">LDSR</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__lollypop" id="clicktab_highres_upscaler__lollypop" aria-selected="false" role="tab" title="lollypop: ">lollypop</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__r_esrgan_4x_" id="clicktab_highres_upscaler__r_esrgan_4x_" aria-selected="false" role="tab" title="R-ESRGAN 4x+: ">R-ESRGAN 4x+</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__r_esrgan_4x__anime6b" id="clicktab_highres_upscaler__r_esrgan_4x__anime6b" aria-selected="false" role="tab" title="R-ESRGAN 4x+ Anime6B: ">R-ESRGAN 4x+ Anime6B</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__remacri_4x" id="clicktab_highres_upscaler__remacri_4x" aria-selected="false" role="tab" title="Remacri 4x: ">Remacri 4x</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__remacri_4x_extrasmoother" id="clicktab_highres_upscaler__remacri_4x_extrasmoother" aria-selected="false" role="tab" title="Remacri 4x ExtraSmoother: ">Remacri 4x ExtraSmoother</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__latent" id="clicktab_highres_upscaler__latent" aria-selected="false" role="tab" title="Latent: ">Latent</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_highres_upscaler__latent__bicubic_antialiased_" id="clicktab_highres_upscaler__latent__bicubic_antialiased_" aria-selected="false" role="tab" title="Latent (bicubic antialiased): ">Latent (bicubic antialiased)</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane emptytab" id="tab_highres_upscaler__animesharp_4x" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__dped" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__ldsr" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__lollypop" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__r_esrgan_4x_" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__r_esrgan_4x__anime6b" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__remacri_4x" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__remacri_4x_extrasmoother" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__latent" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_highres_upscaler__latent__bicubic_antialiased_" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="primary">
+<td>
+<h4>Sampler</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_sampler">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_sampler__euler_a" id="clicktab_sampler__euler_a" aria-selected="true" role="tab" title="Euler a: ">Euler a</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_sampler__dpm___2s_a_karras" id="clicktab_sampler__dpm___2s_a_karras" aria-selected="false" role="tab" title="DPM++ 2S a Karras: ">DPM++ 2S a Karras</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_sampler__dpm___2m_karras" id="clicktab_sampler__dpm___2m_karras" aria-selected="false" role="tab" title="DPM++ 2M Karras: ">DPM++ 2M Karras</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_sampler__dpm___sde_karras" id="clicktab_sampler__dpm___sde_karras" aria-selected="false" role="tab" title="DPM++ SDE Karras: ">DPM++ SDE Karras</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show emptytab" id="tab_sampler__euler_a" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_sampler__dpm___2s_a_karras" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_sampler__dpm___2m_karras" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_sampler__dpm___sde_karras" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="secondary">
+<td>
+<h4>CFG Scale</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_cfg_scale">
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_cfg_scale__3" id="clicktab_cfg_scale__3" aria-selected="false" role="tab" title="3: ">3</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_cfg_scale__5" id="clicktab_cfg_scale__5" aria-selected="false" role="tab" title="5: ">5</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_cfg_scale__7" id="clicktab_cfg_scale__7" aria-selected="false" role="tab" title="7: ">7</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_cfg_scale__8" id="clicktab_cfg_scale__8" aria-selected="true" role="tab" title="8: ">8</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_cfg_scale__9" id="clicktab_cfg_scale__9" aria-selected="false" role="tab" title="9: ">9</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_cfg_scale__11" id="clicktab_cfg_scale__11" aria-selected="false" role="tab" title="11: ">11</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane emptytab" id="tab_cfg_scale__3" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_cfg_scale__5" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_cfg_scale__7" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane active show emptytab" id="tab_cfg_scale__8" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_cfg_scale__9" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_cfg_scale__11" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="primary">
+<td>
+<h4>Denoising Hi Res fix strength</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_denoising">
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_denoising__0_4" id="clicktab_denoising__0_4" aria-selected="false" role="tab" title="0.4: ">0.4</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_denoising__0_6" id="clicktab_denoising__0_6" aria-selected="false" role="tab" title="0.6: ">0.6</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_denoising__0_8" id="clicktab_denoising__0_8" aria-selected="false" role="tab" title="0.8: ">0.8</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane emptytab" id="tab_denoising__0_4" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_denoising__0_6" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_denoising__0_8" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="secondary">
+<td>
+<h4>Steps</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_steps">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_steps__20" id="clicktab_steps__20" aria-selected="true" role="tab" title="20: ">20</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_steps__25" id="clicktab_steps__25" aria-selected="false" role="tab" title="25: ">25</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_steps__30" id="clicktab_steps__30" aria-selected="false" role="tab" title="30: ">30</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_steps__40" id="clicktab_steps__40" aria-selected="false" role="tab" title="40: ">40</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_steps__50" id="clicktab_steps__50" aria-selected="false" role="tab" title="50: ">50</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show emptytab" id="tab_steps__20" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_steps__25" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_steps__30" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_steps__40" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_steps__50" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="primary">
+<td>
+<h4>clipskip</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_clipskip">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_clipskip__1" id="clicktab_clipskip__1" aria-selected="true" role="tab" title="1: ">1</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tab_clipskip__2" id="clicktab_clipskip__2" aria-selected="false" role="tab" title="2: ">2</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show emptytab" id="tab_clipskip__1" role="tabpanel"><div class="tabval_subdiv"></div></div>
+<div class="tab-pane emptytab" id="tab_clipskip__2" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+<tr class="secondary">
+<td>
+<h4>427490730</h4>
+<div class="axis_table_cell emptytab"></div></td>
+<td><ul class="nav nav-tabs" role="tablist" id="tablist_seed">
+<li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tab_seed__427490730" id="clicktab_seed__427490730" aria-selected="true" role="tab" title="427490730: ">427490730</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active show emptytab" id="tab_seed__427490730" role="tabpanel"><div class="tabval_subdiv"></div></div>
+</div></td></tr>
+</table>
+<div class="axis_selectors"><br><div class="btn-group" role="group" aria-label="Basic radio toggle button group">X Axis:&nbsp;
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_model" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_model" title="">model</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_prompt" title="">Prompt</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_negative_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_negative_prompt" title="">Negative Prompt</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_highres_upscaler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_highres_upscaler" title="">HighRes Upscaler</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_sampler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_sampler" title="">Sampler</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_cfg_scale" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_cfg_scale" title="">CFG Scale</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_denoising" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_denoising" title="">Denoising Hi Res fix strength</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_steps" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_steps" title="">Steps</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_clipskip" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_clipskip" title="">clipskip</label>
+<input type="radio" class="btn-check" name="x_axis_selector" id="x_seed" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x_seed" title="">427490730</label>
+</div>
+<br><div class="btn-group" role="group" aria-label="Basic radio toggle button group">Y Axis:&nbsp;
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_model" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_model" title="">model</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_prompt" title="">Prompt</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_negative_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_negative_prompt" title="">Negative Prompt</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_highres_upscaler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_highres_upscaler" title="">HighRes Upscaler</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_sampler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_sampler" title="">Sampler</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_cfg_scale" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_cfg_scale" title="">CFG Scale</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_denoising" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_denoising" title="">Denoising Hi Res fix strength</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_steps" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_steps" title="">Steps</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_clipskip" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_clipskip" title="">clipskip</label>
+<input type="radio" class="btn-check" name="y_axis_selector" id="y_seed" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y_seed" title="">427490730</label>
+</div>
+<br><div class="btn-group" role="group" aria-label="Basic radio toggle button group">X Super-Axis:&nbsp;
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_none" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_none" title="None">None</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_model" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_model" title="">model</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_prompt" title="">Prompt</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_negative_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_negative_prompt" title="">Negative Prompt</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_highres_upscaler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_highres_upscaler" title="">HighRes Upscaler</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_sampler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_sampler" title="">Sampler</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_cfg_scale" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_cfg_scale" title="">CFG Scale</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_denoising" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_denoising" title="">Denoising Hi Res fix strength</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_steps" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_steps" title="">Steps</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_clipskip" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_clipskip" title="">clipskip</label>
+<input type="radio" class="btn-check" name="x2_axis_selector" id="x2_seed" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="x2_seed" title="">427490730</label>
+</div>
+<br><div class="btn-group" role="group" aria-label="Basic radio toggle button group">Y Super-Axis:&nbsp;
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_none" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_none" title="None">None</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_model" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_model" title="">model</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_prompt" title="">Prompt</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_negative_prompt" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_negative_prompt" title="">Negative Prompt</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_highres_upscaler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_highres_upscaler" title="">HighRes Upscaler</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_sampler" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_sampler" title="">Sampler</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_cfg_scale" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_cfg_scale" title="">CFG Scale</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_denoising" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_denoising" title="">Denoising Hi Res fix strength</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_steps" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_steps" title="">Steps</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_clipskip" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_clipskip" title="">clipskip</label>
+<input type="radio" class="btn-check" name="y2_axis_selector" id="y2_seed" autocomplete="off" checked=""><label class="btn btn-outline-primary" for="y2_seed" title="">427490730</label>
+</div>
+</div></div>
+
+                            <center>
+                                <input class="form-check-input" type="checkbox" id="showDescriptions" checked="true" autocomplete="off" onchange="javascript:toggleDescriptions()"> <label class="form-check-label" for="showDescriptions" title="Uncheck this to focus on the grid. Check it to see the full descriptions of each option.">Show descriptions of axes and values</label>
+                                &emsp;&emsp;<input class="form-check-input" type="checkbox" autocomplete="off" value="" id="autoScaleImages"> <label class="form-check-label" for="autoScaleImages">Auto-scale images to viewport width</label>
+                                &emsp;&emsp;<input class="form-check-input" type="checkbox" autocomplete="off" value="" id="stickyNavigation"> <label class="form-check-label" for="stickyNavigation">Sticky navigation</label>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin: auto; width: fit-content;">
+            <div id="save_image_helper">
+                <button onclick="makeImage()">Click Here To Save Image Of Current View</button> <select name="Image Type" id="makeimage_type"><option>jpeg</option><option>png</option></select>
+                <div id="save_image_info" style="display: none;">Here's your image! To share it, just use right click -> Copy image or Save Image As</div>
+            </div>
+            <table id="image_table"></table>
+        </div>
+    </center>
+    <div class="modal modal-fullscreen popup_modal_background" id="image_info_modal"></div>
+    <br><div style="width:256px;height:512px;"></div> <!-- Spacer to reduce screen-jumping if images load while you're scrolled down -->
+    <footer>
+        <center>
+            <hr>
+            Created by: me
+            <br>The technology that powers this page is <a href="https://github.com/mcmonkeyprojects/sd-infinity-grid-generator-script">Infinity Grid Generator</a>, published under the MIT license by Alex 'mcmonkey' Goodwin.
+            <br>This software allows users to generate pages with any content they desire. Therefore, content on this page (images, text, etc.) is the property of whoever generated this specific page.
+            <br>Images area auto-generated by an AI (Stable Diffusion) and so may not have been reviewed by the page author before publishing.
+<script src="a1111webui.js?vary=9"></script>
+            <br>Made using the <a href="https://bootswatch.com/darkly/">Darkly Bootstrap Theme</a> by Thomas Park, which was released under the <a href="https://github.com/thomaspark/bootswatch/blob/95df99d76147797cbcb1014b639805add2327f65/LICENSE">MIT License</a>.
+            <br>
+            <br><div style="width:256px;height:512px;"></div>
+        </center>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="data.js?vary=aab07690"></script>
+    <script src="proc.js?vary=aab07690"></script>
+</body>

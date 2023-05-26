@@ -1,0 +1,213 @@
+grid:
+  title: bedwear
+  description: 'Bedwear comparison'
+  format: png
+  author: me
+axes:
+  Model: artiusv15_v1.safetensors [f949a62901], chilloutmix_NiPrunedFp32Fix.safetensors [fc2511737a], meinaalter_v2.safetensors [1faafdd131], neverendingDreamNED_bakedVae.safetensors [64b14b6ca5], perfectWorld_v3Baked.safetensors [0f49d1caa2], sxzLuma_098VAE.safetensors [4e318bf56d], V08_V08a.safetensors [e1cabe6028], cardosAnimated_v25.safetensors [cee11bcb07], animatrix_v20.safetensors [5f6f1556d1], dreamshaper_6BakedVae.safetensors [b76cc78ad9], lyriel_v16.safetensors [ec6f68ea63], meinaunreal_v3.safetensors [d1c96253ed], perfectWorld_v4Baked.safetensors [24a393500f], revsoap28D_v11.safetensors [18543976aa], colorful_v30.safetensors [1a36578807], perfectdeliberate_v30.safetensors [1d47bbd6cc], revAnimated_v122.safetensors [f8bb2922e1]
+  Prompt:
+    title: Prompt    
+    values:
+      generic_pos:
+        title: Generic Positive Prompt
+        description: ((masterpiece)), (best quality), 8k, ultra-detailed, woman, bedroom, bed hair, messy hair, waking up, pajamas, picture-perfect face,
+        params:
+          prompt: ((masterpiece)), (best quality), 8k, ultra-detailed, woman, bedroom, bed hair, messy hair, waking up, pajamas, picture-perfect face,
+      specified_pos:
+        title: Specified Positive Prompt
+        description: attractive fit young [(Kate Beckinsale:0.6):(elsa \(frozen\)):0.5], skimpy pajamas, falling off one shoulder, bare shoulder, midriff, panty pull, seductive smile, full body, partially undressed, bedroom, on bed, firm large breasts
+        params:
+          prompt: attractive fit young [(Kate Beckinsale:0.6):(elsa \(frozen\)):0.5], skimpy pajamas, falling off one shoulder, bare shoulder, midriff, panty pull, seductive smile, full body, partially undressed, bedroom, on bed, firm large breasts
+  Negative Prompt:
+    title: Negative Prompt
+    values:
+      generic_neg:
+        title: Generic Negative Prompt
+        description: (worst quality,low quality:1.4), (loli,child,infant,baby:1.3), (chinese style,chinese face,chinese girl,thai style,thai girl,thai face),
+        params:
+          Negative Prompt: (worst quality,low quality:1.4), (loli,child,infant,baby:1.3), (chinese style,chinese face,chinese girl,thai style,thai girl,thai face),
+      specified_neg:
+        title: Specified Negative Prompt
+        description: Asian-Less-Neg, negative_hand-neg, FastNegativeEmbedding, (worst quality:2), (low quality:2), ng_deepnegative_v1_75t
+        params:
+          Negative Prompt: Asian-Less-Neg, negative_hand-neg, FastNegativeEmbedding, (worst quality:2), (low quality:2), ng_deepnegative_v1_75t
+  HighRes_Upscaler: 
+    title: HighRes Upscaler
+    default: R-ESRGAN 4x+ Anime6B
+    values:
+      AnimeSharp 4x:
+        title: AnimeSharp 4x
+        params:
+          HighRes Upscaler: AnimeSharp 4x
+        skip: true
+        show: false
+      DPED:
+        title: DPED
+        params:
+          HighRes Upscaler: DPED
+        skip: true
+        show: false
+      LDSR:
+        title: LDSR
+        params:
+          HighRes Upscaler: LDSR
+        skip: true
+        show: false
+      lollypop:
+        title: lollypop
+        params:
+          HighRes Upscaler: lollypop
+        skip: true
+        show: false
+        show: false
+      R-ESRGAN 4x+:
+        title: R-ESRGAN 4x+
+        params:
+          HighRes Upscaler: R-ESRGAN 4x+
+        skip: true
+        show: false
+      R-ESRGAN 4x+ Anime6B:
+        title: R-ESRGAN 4x+ Anime6B
+        params:
+          HighRes Upscaler: R-ESRGAN 4x+ Anime6B
+      Remacri 4x:
+        title: Remacri 4x
+        params:
+          HighRes Upscaler: Remacri 4x
+        skip: true
+        show: false
+      Remacri 4x ExtraSmoother:
+        title: Remacri 4x ExtraSmoother
+        params:
+          HighRes Upscaler: Remacri 4x ExtraSmoother
+        skip: true
+        show: false
+      Latent:
+        title: Latent
+        params:
+          HighRes Upscaler: Latent
+        skip: true
+        show: false
+      Latent (bicubic antialiased):
+        title: Latent (bicubic antialiased)
+        params:
+          HighRes Upscaler: Latent (bicubic antialiased)
+        skip: true
+        show: false
+  Sampler: 
+    title: Sampler
+    values:
+      Euler a:
+        title: Euler a
+        params:
+          Sampler: Euler a
+        skip: true
+        show: false
+      DPM++ 2S a Karras:
+        title: DPM++ 2S a Karras
+        params:
+          Sampler: DPM++ 2S a Karras
+        skip: true
+        show: false
+      DPM++ 2M Karras:
+        title: DPM++ 2M Karras
+        params:
+          Sampler: DPM++ 2M Karras
+      DPM++ SDE Karras:
+        title: DPM++ SDE Karras
+        params:
+          Sampler: DPM++ SDE Karras
+  CFG_Scale:
+    title: CFG Scale
+    default: 8
+    values:
+      3:
+        title: 3
+        params:
+          CFG scale: 3
+        skip: true
+        show: false
+      5:
+        title: 5
+        params:
+          CFG scale: 5
+        skip: true
+        show: false
+      7: 
+        title: 7
+        params: 
+          CFG scale: 7
+      8: 
+        title: 8
+        params:
+          CFG scale: 8
+      9: 
+        title: 9
+        params:
+          CFG scale: 9
+      11:
+        title: 11
+        params:
+          CFG scale: 11
+        skip: true
+        show: false
+  Denoising:
+    title: Denoising Hi Res fix strength
+    default: 0.6
+    values:
+      0.4:
+        title: 0.4
+        params:
+          Denoising: 0.4
+        skip: true
+        show: false
+      0.6:
+        title: 0.6
+        params:
+          Denoising: 0.6
+      0.8:
+        title: 0.8
+        params:
+          Denoising: 0.8
+        skip: true
+        show: false
+  Steps: 
+    title: Steps
+    values:
+      20:
+        title: 20
+        skip: true
+        show: false
+        params:
+          steps: 20
+      25:
+        title: 25
+        params:
+          steps: 25
+      30:
+        title: 30
+        skip: true
+        show: false
+        params:
+          steps: 30
+      40:
+        title: 40
+        skip: true
+        show: false
+        params:
+          steps: 40
+      50:
+        title: 50
+        skip: true
+        show: false
+        params:
+          steps: 50
+  ClipSkip: 1, 2
+  seed:
+    title: '427490730'
+    values:
+      427490730: 
+        title: '427490730'
+        show: true
+        params:
+          seed: 427490730
